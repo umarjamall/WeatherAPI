@@ -41,3 +41,9 @@ app.post("/data/new", (req, res) => {
     res.send({ message: "Saved New Entry!" });
     console.log(projectData);
 });
+
+// Dummy most entry
+app.post('/data/dummy', (req, res) => {
+    projectData = req.body;
+    console.log(projectData);
+})

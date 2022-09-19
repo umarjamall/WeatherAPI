@@ -76,4 +76,11 @@ const updateUI = async () => {
     } catch (error) {
         console.log("Error Updating UI!", error);
     }
-}
+};
+// To save a dummy recent entry
+postData('/data/dummy', {
+    date: '14.8.2022',
+    temp: 66,
+    feeling: 'hot',
+})
+updateUI();
